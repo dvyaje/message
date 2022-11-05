@@ -1,0 +1,72 @@
+:root {
+  
+  --main: #151618;
+  --accent: #1c1d21;
+  --item-accent: #ff59c7;
+  --text-accent: #2d2e34;
+  --border: #232328;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--main);
+  color: white;
+}
+
+.box {
+  background-color: var(--accent);
+  color: white;
+}
+
+.title {
+  color: var(--item-accent);
+  font-size: 20px;
+}
+
+.msg-box {
+  background: var(--accent);
+  border-color: var(--border);
+  color: white;
+}
+
+.msg-box:hover,
+.msg-box:active,
+.msg-box:focus {
+  border-color: var(--text-accent);
+  box-shadow: none;
+}
+
+.textarea::placeholder {
+  color: var(--text-accent);
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.button {
+  margin-top: 10px;
+  background: var(--item-accent) !important;
+  border: var(--border) !important;
+  color: white;
+}
+
+.hidden {
+  font-size: 10px;
+  margin-top: 5px;
+  color: var(--item-accent);
+  display: none;
+}
+
+.heart {
+  color: var(--item-accent);
+}
+
+.subtitle {
+  font-size: 15px;
+}
