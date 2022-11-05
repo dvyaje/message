@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <script src="https://kit.fontawesome.com/149fe6044c.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/thumbnails/008/480/752/small/red-heart-icon-simple-doodle-illustration-with-red-heart-icon-free-png.png">
+  <title>Send Msg!</title>
+  
+</head>
+
+<body>
+  
+  <section class="hero is-fullheight">
+    <article class="hero-body has-text-centered">
+      <div class="container">
+        <div class="box">
+          <h1 class="title">Send Me Anonymous Message</h1>
+          <form name="msg-form" action="redirect.html" onsubmit="return sendMSG()" required>
+            <textarea name="msg-input" class="textarea msg-box" id="msg" placeholder="e.g. I like you"></textarea>
+            <button class="button send-btn" id="send" type="submit">Send Message</button>
+          </form>
+          <p class="alert hidden" id="alert-notif">Please enter a message</p>
+        </div>
+        <h2 class="subtitle">made with <span class="fas fa-heart heart"></span> by yaje!</h2>
+      </div>
+    </article>
+  </section>
+  
+  
+  <script src="src/scripts/app.js"></script>
+</body>
+
+</html>
